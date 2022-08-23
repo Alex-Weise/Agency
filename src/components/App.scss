@@ -1,0 +1,27 @@
+$font-color: #331B3B;
+
+$breakpoints: (
+    xs: 575.98px,
+    s: 610.98px,
+    sm: 767.98px,
+    md: 991.98px,
+    lg: 1439.98px,
+);
+
+@mixin breakpoint($breakpoint) {
+
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @media (max-width: ($breakpoint-value)) {
+        @content;
+    }
+};
+
+@mixin breakpointMin($breakpoint) {
+
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @media (min-width: ($breakpoint-value)) {
+        @content;
+    }
+};
