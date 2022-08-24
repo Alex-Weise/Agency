@@ -27,7 +27,7 @@
     width: 28rem;
     height: 26rem;
     z-index: -2;
-    top: 7rem;
+    top: 11rem;
     right: -2rem;
     transform: skew(-6deg, 0deg),
 }
@@ -59,6 +59,7 @@
     gap: 2rem;
     color: $font-color;
     transform: translate(20%, 0);
+    transition-duration: 1s;
 }
 .card1,
 .card2,
@@ -96,7 +97,7 @@
 .buttons {
     display: flex;
     gap: 1rem;
-    transform: translate(12%, 0);
+    transform: translate(12%, 1rem);
 }
 .next,
 .back {
@@ -106,4 +107,9 @@
     height: 2rem;
     font-size: 1.4rem;
     background: transparent;
+    cursor: pointer;
+}
+.next:active,
+.back:active {
+    transform: scale(1.2);
 }
