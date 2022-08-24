@@ -4,7 +4,7 @@ import people from "../../assets/Two-people.png";
 const Home = () => {
 
     return (
-        <section>
+        <section className={styles.container}>
             <div className={styles.title}>
                 <p className={styles.title1}>We Help you</p>
                 <p className={styles.title2}>to grow your</p>
