@@ -15,18 +15,26 @@ const WhatWeDo = () => {
     }
 
     const goNext = () => {
-        if (count < 90) {
+        const width = window.screen.width;
+        const cards = document.getElementById("cards");
+        if (cards && count < 90 ) {
             setCount(prev => prev + 15);
-            const cards = document.getElementById("cards");
-            if (cards) cards.style.cssText = `transform: translate(${20 - count}%, 0)`;
-        }
+            if (width > 576) {
+                cards.style.cssText = `transform: translate(${20 - count}%, 0)`;
+            } else if (width <= 398) {
+                cards.style.cssText = `transform: translate(${20 - (count * 2.2)}%, 0)`;
+            } else {cards.style.cssText = `transform: translate(${20 - (count * 1.5)}%, 0)`;}
+        } 
     }
 
     const goBack = () => {
-        if (count > 15) {
+        const width = window.screen.width;
+        const cards = document.getElementById("cards");
+        if (cards && count > 15) {
             setCount(prev => prev - 15);
-            const cards = document.getElementById("cards");
-            if (cards) cards.style.cssText = `transform: translate(${(105 - count) - 55}%, 0)`;
+            if (width > 576) {cards.style.cssText = `transform: translate(${(105 - count) - 55}%, 0)`;
+            } else if (width <= 398) {cards.style.cssText = `transform: translate(${((105 - count) * 2.2) - 145}%, 0)`;
+            } else {cards.style.cssText = `transform: translate(${((105 - count) * 1.5) - 92.5}%, 0)`;}
         }
     }
 
@@ -85,7 +93,7 @@ const WhatWeDo = () => {
                 <button className={styles.back} id="back" onClick={goBack} type="button"
                     style={count <= 15 ? disableButton() : {}}>{"<"}</button>
                 <button className={styles.next} id="next" onClick={() => goNext()} type="button"
-                    style={count >= 90 ? disableButton() : {}}>{">"}</button>
+                    style={count >= 90 ? disableButton() : {} } >{">"}</button>
             </div>
         </section>
     )

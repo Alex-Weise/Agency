@@ -1,7 +1,7 @@
 @import "src/components/App.scss";
 
 .container {
-    margin: 0 40px;
+    margin: 0 0 0 40px;
 }
 
 .title {
@@ -70,7 +70,6 @@
 
 .vector1 {
     background: url("../../assets/vectors/vector1.svg") 0 0 / 100% no-repeat;
-    background-size: contain;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -115,8 +114,7 @@
         width: 22rem;
     }
     .vector1 {
-        width:125%;
-        height: 52%;
+        width: 117%;
     }
 
     .vector2 {
@@ -165,8 +163,7 @@
     }
 
     .vector1 {
-        width: 135%;
-        height: 47%;
+        width: 130%;
     }
 
     .vector2 {
@@ -215,7 +212,6 @@
 
     .vector1 {
         width: 165%;
-        height: 45%;
     }
     .vector2 {
         width: 14rem;
@@ -239,7 +235,7 @@
 }
 @include breakpoint(xs) {
     .container {
-        margin: 0 20px;
+        margin: 0 0 0 20px;
     }
     .images {
         position: relative;
@@ -271,6 +267,7 @@
     }
 
     .vector1 {
+        background-size: contain;
         width: 100%;
         height: 100%;
         transform: translate(calc(100vw - 15rem), -1rem);
