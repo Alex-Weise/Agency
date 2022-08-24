@@ -17,7 +17,9 @@ const Home = () => {
             <button type="button" className={styles.button}>GET STARTED</button>
             <div className={styles.images}>
                 <img src={people} className={styles.img} alt="Two people" />
-                <div className={styles.vector1} />
+                <div className={styles.wrapper}>
+                    <div className={styles.vector1} />
+                </div>
                 <div className={styles.vector2} />
                 <div className={styles.vector3} />
             </div>

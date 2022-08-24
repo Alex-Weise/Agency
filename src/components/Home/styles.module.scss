@@ -1,7 +1,7 @@
 @import "src/components/App.scss";
 
 .container {
-    margin: 0 20px;
+    margin: 0 40px;
 }
 
 .title {
@@ -59,13 +59,19 @@
     width: 100%;
 }
 
-.vector1 {
+.wrapper {
+    overflow: hidden;
     position: absolute;
     top: 0;
     right: 0;
-    background: url("../../assets/vectors/vector1.svg") 0 0 / 100% no-repeat;
     width: 32rem;
-    max-width: 100%;
+    height: 100%;
+}
+
+.vector1 {
+    background: url("../../assets/vectors/vector1.svg") 0 0 / 100% no-repeat;
+    background-size: contain;
+    width: 100%;
     height: 100%;
     z-index: 1;
 }
@@ -105,11 +111,12 @@
     .img {
         width: 30rem;
     }
-
+    .wrapper {
+        width: 22rem;
+    }
     .vector1 {
-        width: 26rem;
-        // right: -4rem;
-        // transform: translate(4rem, 0);
+        width:125%;
+        height: 52%;
     }
 
     .vector2 {
@@ -153,9 +160,13 @@
         bottom: 0.6rem;
     }
 
+    .wrapper {
+        width: 18rem;
+    }
+
     .vector1 {
-        width: 23rem;
-        // right: -5rem;
+        width: 135%;
+        height: 47%;
     }
 
     .vector2 {
@@ -190,7 +201,7 @@
     .img {
         width: 18rem;
         right: 1rem;
-        top: 15rem;
+        top: 12rem;
     }
 
     .line {
@@ -198,21 +209,23 @@
         height: 0.5rem;
         bottom: 0.3rem;
     }
-
-    .vector1 {
-        width: 23rem;
-        // right: -8rem;
+    .wrapper {
+        width: 13rem;
     }
 
+    .vector1 {
+        width: 165%;
+        height: 45%;
+    }
     .vector2 {
         width: 14rem;
         height: 11.3rem;
-        top: 16rem;
+        top: 13rem;
         right: 5rem;
     }
 
     .vector3 {
-        top: 13.5rem;
+        top: 10.5rem;
         width: 10.5rem;
         right: 5rem;
     }
@@ -222,5 +235,57 @@
         width: 10rem;
         height: 2.5rem;
         font-size: 0.9rem;
+    }
+}
+@include breakpoint(xs) {
+    .container {
+        margin: 0 20px;
+    }
+    .images {
+        position: relative;
+        width: 100%;
+        height: 20rem;
+    }
+    .text {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .line {
+        width: 8rem;
+        height: 0.5rem;
+        bottom: 0.3rem;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .img {
+        width: 15rem;
+        top: 6rem;
+        right: 1rem;
+    }
+
+    .vector1 {
+        width: 100%;
+        height: 100%;
+        transform: translate(calc(100vw - 15rem), -1rem);
+    }
+
+    .vector2 {
+        width: 12rem;
+        height: 9rem;
+        top: 7rem;
+        right: 4rem;
+    }
+
+    .vector3 {
+        top: 5rem;
+        width: 9rem;
+        right: 5rem;
     }
 }
