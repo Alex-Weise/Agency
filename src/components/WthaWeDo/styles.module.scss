@@ -180,6 +180,9 @@
         height: 0.4rem;
         top: 6.6rem;
     }
+    .blue {
+        border-radius: 15rem;
+    }
     .cards {
         margin-top: 1.5rem;
         gap: 1rem;
@@ -226,7 +229,7 @@
     .line {
         width: 4.6rem;
         height: 0.3rem;
-        top: 4.5rem;
+        top: 4.4rem;
     }
     .cards {
         margin-top: 1rem;
@@ -238,12 +241,12 @@
         border-radius: 0.2rem;
     }
     .wrapper {
-        height: 18rem;
+        height: 17rem;
     }
     .blue {
         width: 170%;
         height: 140%;
-        border-radius: 15rem;
+        border-radius: 10rem;
         transform: translate(-38%, 0);
     }
     .dotted {
@@ -258,7 +261,7 @@
         font-size: 0.8rem;
     }
     .card_text{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .card {
         min-width: 110px;
@@ -269,8 +272,8 @@
     }
     .next,
     .back {
-        width: 1.5rem;
-        height: 1.5rem;
-        font-size: 1rem;
+        width: 1.3rem;
+        height: 1.3rem;
+        font-size: 0.8rem;
     }
 }

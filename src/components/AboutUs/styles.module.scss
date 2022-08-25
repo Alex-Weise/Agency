@@ -155,8 +155,8 @@
 
 @include breakpoint(sm) {
     .wrapper {
-        margin: 2rem 40px;
-        height: 28rem;
+        margin: 0 5px 0 20px;
+        height: 24rem;
     }
     .container_image {
         img {
@@ -202,9 +202,7 @@
 
 @include breakpoint(xs) {
     .wrapper {
-        margin: 0;
-        margin-left: 20px;
-        height: 29rem;
+        height: 26rem;
         flex-direction: column;
     }
     .container_text {
@@ -216,7 +214,7 @@
         line-height: 1.4rem;
     }
     .text {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .line {
         width: 2.3rem;
@@ -226,9 +224,9 @@
     }
     .button {
         margin-top: 0;
-        font-size: 0.6rem;
-        width: 7rem;
-        height: 2rem;
+        font-size: 0.5rem;
+        width: 5rem;
+        height: 1.5rem;
         border-radius: 0.5rem;
     }
     .container_image {
