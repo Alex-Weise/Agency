@@ -39,7 +39,7 @@ const WhatWeDo = () => {
     }
 
     return (
-        <section className={styles.container}>
+        <section className={styles.container} data-testid="section">
             <div className={styles.wrapper}>
                 <div className={styles.blue} />
                 <div className={styles.line} />
@@ -47,7 +47,7 @@ const WhatWeDo = () => {
             <div className={styles.dotted} />
             <p className={styles.title1}>What We Do</p>
             <p className={styles.title2}>For Your Business</p>
-            <div className={styles.cards} id="cards">
+            <div className={styles.cards} id="cards" data-testid="cards">
                 <div className={styles.card1}>
                     <div className={styles.card_icon} style={{backgroundColor: "#FFDED4"}}>
                         <img src={website} alt="website" />

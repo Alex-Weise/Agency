@@ -1,4 +1,4 @@
-@import "src/components/App.scss";
+@import "src/App.scss";
 
 .container {
     margin: 0 0 0 40px;
@@ -41,10 +41,11 @@
     width: 15rem;
     height: 4rem;
     background-color: $font-color;
+    font-weight: bold;
     color: white;
     border: none;
     border-radius: 0.8rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .img {
@@ -69,7 +70,7 @@
 }
 
 .vector1 {
-    background: url("../../assets/vectors/vector1.svg") 0 0 / 100% no-repeat;
+    background: url("../../assets/vectors/vector1.png") 0 0 / 100% no-repeat;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -88,7 +89,7 @@
 
 .vector3 {
     position: absolute;
-    background: url("../../assets/vectors/vector3.svg") 0 0 / 100% no-repeat;
+    background: url("../../assets/vectors/vector2.png") 0 0 / 100% no-repeat;
     top: 7rem;
     right: 11rem;
     width: 24rem;
@@ -134,7 +135,6 @@
         margin: 1rem 0.5rem;
         width: 13rem;
         height: 3rem;
-        font-size: 1.1rem;
     }
 }
 
@@ -176,13 +176,6 @@
     .vector3 {
         width: 15rem;
         right: 6rem;
-    }
-
-    .button {
-        margin: 1rem 0.5rem;
-        width: 13rem;
-        height: 3rem;
-        font-size: 1.1rem;
     }
 }
 @include breakpoint(sm) {
@@ -244,18 +237,26 @@
     }
     .text {
         width: 100%;
+        font-size: 0.8rem;
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 1.3rem;
+        line-height: 1.3rem;
     }
 
     .line {
-        width: 8rem;
-        height: 0.5rem;
-        bottom: 0.3rem;
+        width: 5.2rem;
+        height: 0.3rem;
+        bottom: 0.1rem;
     }
-
+    .button {
+        margin: 0;
+        width: 7rem;
+        height: 1.9rem;
+        font-size: 0.6rem;
+        border-radius: 0.5rem;
+    }
     .wrapper {
         width: 100%;
     }
@@ -270,19 +271,19 @@
         background-size: contain;
         width: 100%;
         height: 100%;
-        transform: translate(calc(100vw - 15rem), -1rem);
+        transform: translate(calc(100vw - 14rem), -1rem);
     }
 
     .vector2 {
         width: 12rem;
         height: 9rem;
-        top: 7rem;
-        right: 4rem;
+        top: 7.5rem;
+        right: 4.5rem;
     }
 
     .vector3 {
         top: 5rem;
-        width: 9rem;
+        width: 8.5rem;
         right: 5rem;
     }
 }
