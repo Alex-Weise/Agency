@@ -1,0 +1,110 @@
+@import "src/App.scss";
+
+.wrapper {
+    margin-top: 15rem;
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+}
+.container_text {
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    color: $font-color;
+    align-items: baseline;
+}
+.title {
+    flex: 1 0 65%;
+    position: relative;
+}
+.title1,
+.title2 {
+    font-size: 3.2rem;
+    margin: 0;
+    line-height: 3.5rem;
+    z-index: 0;
+}
+.title1 {
+    font-weight: bold;
+}
+.text {
+    font-size: 1.2rem;
+}
+.line {
+    position: absolute;
+    width: 10rem;
+    height: 0.7rem;
+    background-color: $color-line;
+    bottom: 0.1rem;
+    left: 10.3rem;
+    z-index: -1;
+}
+.pink {
+    position: absolute;
+    width: 149%;
+    height: 200%;
+    background-color: rgba(255, 222, 212, 0.3);
+    border-radius: 20rem;
+    transform: translate(10%, 0);
+    z-index: -1;
+}
+.cards {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    color: $font-color;
+    transform: translate(22%, 0);
+    transition-duration: 1s;
+}
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px -2px black;
+    padding: 1.5rem 0.5rem;
+    min-width: 420px;
+}
+.image {
+    img {
+        margin: 0 6px;
+    }
+}
+.discribe {
+    color: $font-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2rem 1rem 1rem 1rem;
+    h5 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+}
+.view {
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 2rem;
+    width: 7rem;
+    font-size: 1rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    gap: 1rem;
+    transform: translate(16%, 1rem);
+}
+.next,
+.back {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.4rem;
+    background: transparent;
+    cursor: pointer;
+}
+.next:active,
+.back:active {
+    transform: scale(1.2);
+}

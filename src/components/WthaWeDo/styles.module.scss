@@ -62,11 +62,7 @@
     transform: translate(20%, 0);
     transition-duration: 1s;
 }
-.card1,
-.card2,
-.card3,
-.card4,
-.card5 {
+.card {
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0px 0px 8px -2px black;
@@ -93,6 +89,7 @@
 }
 .card_text {
     margin: 0;
+    font-size: 1.1rem;
 }
 
 .buttons {
@@ -116,11 +113,7 @@
 }
 
 @include breakpoint(lg) {
-    .card1,
-    .card2,
-    .card3,
-    .card4,
-    .card5 {
+    .card {
         min-width: 250px;
         padding: 0.8rem;
     }
@@ -165,11 +158,7 @@
         margin: 0.5rem 0;
         font-size: 1rem;
     }
-    .card1,
-    .card2,
-    .card3,
-    .card4,
-    .card5 {
+    .card {
         min-width: 190px;
     }
 }
@@ -217,11 +206,7 @@
     .card_text{
         font-size: 0.8rem;
     }
-    .card1,
-    .card2,
-    .card3,
-    .card4,
-    .card5 {
+    .card {
         min-width: 135px;
     }
 }
@@ -275,11 +260,7 @@
     .card_text{
         font-size: 0.7rem;
     }
-    .card1,
-    .card2,
-    .card3,
-    .card4,
-    .card5 {
+    .card {
         min-width: 110px;
     }
     .buttons {

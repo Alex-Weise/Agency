@@ -48,7 +48,7 @@ const WhatWeDo = () => {
             <p className={styles.title1}>What We Do</p>
             <p className={styles.title2}>For Your Business</p>
             <div className={styles.cards} id="cards" data-testid="cards">
-                <div className={styles.card1}>
+                <div className={styles.card}>
                     <div className={styles.card_icon} style={{backgroundColor: "#FFDED4"}}>
                         <img src={website} alt="website" />
                     </div>
@@ -56,7 +56,7 @@ const WhatWeDo = () => {
                     <p className={styles.card_text}>Lorem Ipsum has been the industry's 
                     standard dummy text ever since the 1500s.</p>
                 </div>
-                <div className={styles.card2}>
+                <div className={styles.card}>
                     <div className={styles.card_icon} style={{backgroundColor: "#FFEED4"}}>
                         <img src={computer} alt="compute" />
                     </div>
@@ -64,7 +64,7 @@ const WhatWeDo = () => {
                     <p className={styles.card_text}>Lorem Ipsum has been the industry's 
                     standard dummy text ever since the 1500s.</p>
                 </div>
-                <div className={styles.card3}>
+                <div className={styles.card}>
                     <div className={styles.card_icon} style={{backgroundColor: "#D4F0FF"}}>
                         <img src={mobile} alt="mobile phone" />
                     </div>
@@ -72,7 +72,7 @@ const WhatWeDo = () => {
                     <p className={styles.card_text}>Lorem Ipsum has been the industry's 
                     standard dummy text ever since the 1500s.</p>
                 </div>
-                <div className={styles.card4}>
+                <div className={styles.card}>
                     <div className={styles.card_icon} style={{backgroundColor: "#FFD4D4"}}>
                         <img src={rocket} alt="rocket" />
                     </div>
@@ -80,7 +80,7 @@ const WhatWeDo = () => {
                     <p className={styles.card_text}>Lorem Ipsum has been the industry's 
                     standard dummy text ever since the 1500s.</p>
                 </div>
-                <div className={styles.card5}>
+                <div className={styles.card}>
                     <div className={styles.card_icon} style={{backgroundColor: "#FDC021"}}>
                         <img src={heart} alt="heart" />
                     </div>
