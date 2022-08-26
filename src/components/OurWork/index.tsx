@@ -5,6 +5,7 @@ import mob1 from "../../assets/cards/card1-2.png";
 import web2 from "../../assets/cards/card2-1.png";
 import mob2 from "../../assets/cards/card2-2.png";
 import web3 from "../../assets/cards/card3.png";
+import { DEFAULT_TEXT } from "../../App";
 
 
 const OurWork = () => {
@@ -53,9 +54,8 @@ const OurWork = () => {
                     <p className={styles.title2}>By Our Experts</p>
                     <div className={styles.line} />
                 </div>
-                <p className={styles.text}>Lorem Ipsum has been the industry's standard dummy 
-                text ever since the 1500s, when an unknown printer took a galley of type and 
-                scrambled it to make a type specimen book.
+                <p className={styles.text}>
+                    {DEFAULT_TEXT}
                 </p>
             </div>
             <div className={styles.cards} id="cards2">

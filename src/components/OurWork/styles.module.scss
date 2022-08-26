@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     color: $font-color;
-    align-items: baseline;
+    align-items: flex-start;
 }
 .title {
     flex: 1 0 65%;
@@ -117,7 +117,7 @@
 
 @include breakpoint(lg) {
     .wrapper {
-        height: 35rem;
+        height: 36rem;
     }
     .card {
         padding: 1rem 0.5rem 0 0.5rem;
@@ -144,8 +144,8 @@
 }
 @include breakpoint(n) {
     .wrapper {
-        margin-top: 3rem;
-        height: 31rem;
+        margin-top: 5rem;
+        height: 30rem;
     }
     .title1,
     .title2 {
@@ -188,7 +188,7 @@
 }
 @include breakpoint(sm) {
     .wrapper {
-        height: 25rem;
+        height: 23rem;
     }
     .container_text {
         margin: 0 5px 0 20px;
@@ -243,7 +243,10 @@
 @include breakpoint(xs) {
     .wrapper {
         margin-top: 2rem;
-        height: 16rem;
+        height: 17rem;
+    }
+    .container_text {
+        align-items: center;
     }
     .pink {
         border-radius: 10rem;
@@ -264,7 +267,7 @@
     }
     .line {
         width: 3rem;
-        height: 0.2rem;
+        height: 0.25rem;
         left: 3.2rem;
         bottom: 0.1rem;
     }

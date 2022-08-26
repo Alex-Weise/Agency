@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
 import people from "../../assets/Two-people.png";
+import { DEFAULT_TEXT } from "../../App";
 
 const Home = () => {
 
@@ -11,8 +12,8 @@ const Home = () => {
                 <p className={styles.title3}>Business</p>
                 <div className={styles.line}></div>
             </div>
-            <p className={styles.text}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-               when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            <p className={styles.text}>
+                {DEFAULT_TEXT}
             </p>
             <button type="button" className={styles.button}>GET STARTED</button>
             <div className={styles.images}>

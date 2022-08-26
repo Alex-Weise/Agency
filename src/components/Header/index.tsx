@@ -19,7 +19,6 @@ const Header = () => {
             }
         }
     };
-    // scrollTo("About Us");
 
     return (
         <header className={styles.header}>

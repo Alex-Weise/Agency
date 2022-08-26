@@ -5,6 +5,7 @@ import mobile from "../../assets/link/mobile-phone.png";
 import rocket from "../../assets/link/rocket.png";
 import heart from "../../assets/link/icon-heart.png";
 import { useState } from "react";
+import { SHORT_TEXT } from "../../App";
 
 const WhatWeDo = () => {
     const [count, setCount] = useState(15);
@@ -53,40 +54,45 @@ const WhatWeDo = () => {
                         <img src={website} alt="website" />
                     </div>
                     <h4 className={styles.card_title}>WECSITE DESIGN</h4>
-                    <p className={styles.card_text}>Lorem Ipsum has been the industry's 
-                    standard dummy text ever since the 1500s.</p>
+                    <p className={styles.card_text}>
+                        {SHORT_TEXT}
+                    </p>
                 </div>
                 <div className={styles.card}>
                     <div className={styles.card_icon} style={{backgroundColor: "#FFEED4"}}>
                         <img src={computer} alt="compute" />
                     </div>
                     <h4 className={styles.card_title}>WECSITE DESIGN</h4>
-                    <p className={styles.card_text}>Lorem Ipsum has been the industry's 
-                    standard dummy text ever since the 1500s.</p>
+                    <p className={styles.card_text}>
+                        {SHORT_TEXT}
+                    </p>
                 </div>
                 <div className={styles.card}>
                     <div className={styles.card_icon} style={{backgroundColor: "#D4F0FF"}}>
                         <img src={mobile} alt="mobile phone" />
                     </div>
                     <h4 className={styles.card_title}>WECSITE DESIGN</h4>
-                    <p className={styles.card_text}>Lorem Ipsum has been the industry's 
-                    standard dummy text ever since the 1500s.</p>
+                    <p className={styles.card_text}>
+                        {SHORT_TEXT}
+                    </p>
                 </div>
                 <div className={styles.card}>
                     <div className={styles.card_icon} style={{backgroundColor: "#FFD4D4"}}>
                         <img src={rocket} alt="rocket" />
                     </div>
                     <h4 className={styles.card_title}>WECSITE DESIGN</h4>
-                    <p className={styles.card_text}>Lorem Ipsum has been the industry's 
-                    standard dummy text ever since the 1500s.</p>
+                    <p className={styles.card_text}>
+                        {SHORT_TEXT}
+                    </p>
                 </div>
                 <div className={styles.card}>
                     <div className={styles.card_icon} style={{backgroundColor: "#FDC021"}}>
                         <img src={heart} alt="heart" />
                     </div>
                     <h4 className={styles.card_title}>WECSITE DESIGN</h4>
-                    <p className={styles.card_text}>Lorem Ipsum has been the industry's 
-                    standard dummy text ever since the 1500s.</p>
+                    <p className={styles.card_text}>
+                        {SHORT_TEXT}
+                    </p>
                 </div>
             </div>
             <div className={styles.buttons}>

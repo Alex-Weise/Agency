@@ -1,0 +1,176 @@
+@import "src/App.scss";
+
+.wrapper {
+    height: 32rem;
+    margin: 13rem 40px 0 40px;
+    text-align: center;
+    color: $font-color;
+    position: relative;
+}
+.title1,
+.title2 {
+    font-size: 3rem;
+    margin: 0;
+    line-height: 3.5rem;
+}
+.title1 {
+    font-weight: bold;
+}
+.line {
+    position: absolute;
+    width: 8.3rem;
+    height: 0.6rem;
+    background-color: $color-line;
+    top: 6.1rem;
+    left: calc(50% + 10rem);
+    z-index: -1;
+}
+.container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.comm{
+    width: 30%;
+    text-align: start;
+    border: 3px solid rgba(0, 0, 0, 0.07);
+    border-radius: 1.5%;
+    padding: 1rem;
+    img {
+        width: 18%;
+    }
+}
+.text1 {
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+}
+.text2 {
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: 500; 
+}
+.text2::before{
+    content: "-";
+    color: $color-line;
+    font-size: 3rem;
+    margin-right: 0.5rem;
+    font-weight: bold;
+    line-height: 0;
+}
+@include breakpoint(lg) {
+    .wrapper {
+        height: 31rem;
+    }
+    .container {
+        margin-top: 3rem;
+        gap: 4rem;
+    }
+    .comm{
+        width: 40%;
+    }
+}
+@include breakpoint(n) {
+    .wrapper {
+        height: 26rem;
+        margin: 8rem 40px 0 40px;
+    }
+    .title1,
+    .title2 {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+    .line {
+        width: 7rem;
+        height: 0.5rem;
+        top: 5rem;
+        left: calc(50% + 8.2rem);
+    }
+    .container {
+        margin-top: 3rem;
+        gap: 2rem;
+    }
+    .comm{
+        width: 50%;
+        padding: 0.9rem;
+    }
+    .text1 {
+        font-size: 1rem;
+    }
+    .text2 {
+        font-size: 1.3rem;
+    }
+    .text2::before{
+        font-size: 2rem;
+    }
+}
+@include breakpoint(sm) {
+    .wrapper {
+        height: 20rem;
+        margin: 4rem 5px 0 20px;
+    }
+    .title1,
+    .title2 {
+        font-size: 2rem;
+        line-height: 2.1rem;
+    }
+    .line {
+        width: 5.5rem;
+        height: 0.4rem;
+        top: 3.75rem;
+        left: calc(50% + 6.6rem);
+    }
+    .container {
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+    .comm{
+        padding: 0.7rem;
+    }
+    .text1 {
+        font-size: 0.8rem;
+        margin: 0 0 0.6rem 0;
+    }
+    .text2 {
+        font-size: 1.1rem;
+    }
+    .text2::before{
+        font-size: 1.8rem;
+    }
+}
+@include breakpoint(xs) {
+    .wrapper {
+        height: 16rem;
+        margin: 2rem 5px 0 20px;
+    }
+    .title1,
+    .title2 {
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+    }
+    .line {
+        width: 3.6rem;
+        height: 0.3rem;
+        top: 2.4rem;
+        left: calc(50% + 4.3rem);
+    }
+    .container {
+        margin-top: 1rem;
+        gap: 0.5rem;
+    }
+    .comm{
+        padding: 0.5rem;
+        border: 1.5px solid rgba(0, 0, 0, 0.07);
+    }
+    .text1 {
+        font-size: 0.6rem;
+        margin: 0 0 0.4rem 0;
+    }
+    .text2 {
+        font-size: 0.8rem;
+    }
+    .text2::before{
+        font-size: 1.3rem;
+        margin-right: 0.2rem;
+    }
+}

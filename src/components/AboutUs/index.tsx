@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
 import people from "../../assets/Mask-group.png";
+import { DEFAULT_TEXT } from "../../App";
 
 const AboutUs = () => {
 
@@ -8,13 +9,11 @@ const AboutUs = () => {
             <div className={styles.container_text}>
                 <p className={styles.title1}>About Us</p>
                 <p className={styles.title2}>Fake or Real</p>
-                <p className={styles.text}>Lorem Ipsum has been the industry's standard dummy text ever 
-                    since the 1500s, when an unknown printer took a galley of type and scrambled it to 
-                    make a type specimen book.
+                <p className={styles.text}>
+                    {DEFAULT_TEXT}
                 </p>
-                <p className={styles.text}>Lorem Ipsum has been the industry's standard dummy text ever 
-                    since the 1500s, when an unknown printer took a galley of type and scrambled it to 
-                    make a type specimen book.
+                <p className={styles.text}>
+                    {DEFAULT_TEXT}
                 </p>
                 <div className={styles.line} />
                 <button type="button" className={styles.button}>EXPLORE MORE</button>
