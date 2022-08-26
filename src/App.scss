@@ -27,3 +27,42 @@ $breakpoints: (
         @content;
     }
 };
+
+.button_up {
+    position: fixed;
+    bottom: 7%;
+    left: 1%;
+    width: 35px;
+    height: 40px;
+    background-color: #fab80112;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30%;
+    z-index: 5;
+    padding: 0;
+    cursor: pointer;
+}
+.button_up:active {
+    transform: scale(0.9);
+}
+.button_up:hover {
+    transform: scale(1.1);
+}
+.close {
+    display: none;
+}
+@include breakpoint(sm) {
+    .button_up {
+        width: 25px;
+        height: 30px;
+        border-radius: 25%;
+        font-size: 0.7rem;
+    }
+}
+@include breakpoint(xs) {
+    .button_up {
+        width: 18px;
+        height: 21px;
+        border-radius: 15%;
+        font-size: 0.5rem;
+    }
+}

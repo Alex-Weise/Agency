@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './App.scss';
 import { AboutUs } from './components/AboutUs';
 import { OurComments } from './components/Comments';
@@ -12,10 +13,28 @@ export const SHORT_TEXT = "Lorem Ipsum has been the industry's standard dummy te
 
 
 function App() {
+  const [isScroll, setScroll] = useState(false);
+
+  useEffect( () => {
+    const scrollShow = () => {
+      const scroll = Math.ceil(window.scrollY);
+      scroll > 350 ? setScroll(true) : setScroll(false);
+    };
+    window.addEventListener("scroll", scrollShow);
+    return () => {
+      window.removeEventListener("scroll", scrollShow)
+    }
+  }, [setScroll])
+
+  const goUp = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <Header />
       <main>
+        <button className={isScroll ? "button_up" : "close"} type="button" onClick={goUp}>UP</button>
         <Home />
         <WhatWeDo />
         <AboutUs />
