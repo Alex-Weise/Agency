@@ -1,6 +1,7 @@
 import './App.scss';
 import { AboutUs } from './components/AboutUs';
 import { OurComments } from './components/Comments';
+import { Contact } from './components/Contact';
 import { Header } from './components/Header';
 import { Home } from './components/Home';
 import { OurWork } from './components/OurWork';
@@ -20,6 +21,7 @@ function App() {
         <AboutUs />
         <OurWork />
         <OurComments />
+        <Contact />
       </main>
     </>
   );
