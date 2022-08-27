@@ -2,7 +2,7 @@ import styles from "./styles.module.scss";
 import facebook from "../../assets/link/facebook.png";
 import insta from "../../assets/link/insta.png";
 import linkIn from "../../assets/link/linkIn.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Header = () => {
     const [activeLine, setActive] = useState("Home");

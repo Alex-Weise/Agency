@@ -45,7 +45,7 @@
     position: relative;
     width: 1.3rem;
     height: 2rem;
-    // cursor: pointer;
+    cursor: pointer;
     img {
         object-fit: cover;
         max-width: 100%;
@@ -135,6 +135,10 @@
 @include breakpoint(xs) {
     .header {
         margin: 0 20px;
+    }
+    .activeLine {
+        height: 1px;
+        bottom: -0.5px;
     }
     .nav {
         font-size: 0.4rem;
