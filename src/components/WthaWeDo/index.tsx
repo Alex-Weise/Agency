@@ -1,8 +1,8 @@
 import styles from "./styles.module.scss";
-import website from "../../assets/link/website.png";
-import computer from "../../assets/link/computer.png";
-import mobile from "../../assets/link/mobile-phone.png";
-import rocket from "../../assets/link/rocket.png";
+import website from "../../assets/link/website.svg";
+import computer from "../../assets/link/computer.svg";
+import mobile from "../../assets/link/mobile-phone.svg";
+import rocket from "../../assets/link/rocket.svg";
 import heart from "../../assets/link/icon-heart.png";
 import { useState } from "react";
 import { SHORT_TEXT } from "../../App";

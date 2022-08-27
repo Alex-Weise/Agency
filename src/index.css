@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #331B3B;;
+  color: #331B3B;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;

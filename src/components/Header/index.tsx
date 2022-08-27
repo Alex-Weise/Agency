@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
-import facebook from "../../assets/link/facebook.png";
-import insta from "../../assets/link/insta.png";
-import linkIn from "../../assets/link/linkIn.png";
+import facebook from "../../assets/link/facebook.svg";
+import insta from "../../assets/link/insta.svg";
+import linkIn from "../../assets/link/linkIn.svg";
 import { useState } from "react";
 
 const Header = () => {

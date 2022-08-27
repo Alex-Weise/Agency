@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import znak from "../../assets/link/znak.png";
+import znak from "../../assets/link/znak.svg";
 import { DEFAULT_TEXT } from "../../App";
 
 const OurComments = () => {
