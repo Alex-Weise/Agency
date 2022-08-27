@@ -11,6 +11,15 @@
     font-size: 5.5rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+.title::after {
+    content: "";
+    background-color: $color-line;
+    width: 22rem;
+    height: 1.1rem;
+    position: absolute;
+    bottom: 0.9rem;
+    z-index: -1;
+}
 
 .title1 {
     margin: 0;
@@ -20,15 +29,6 @@
 .title2,
 .title3 {
     margin: 0;
-}
-
-.line {
-    background-color: $color-line;
-    width: 22rem;
-    height: 1.1rem;
-    position: absolute;
-    bottom: 0.9rem;
-    z-index: -1;
 }
 
 .text {
@@ -104,7 +104,7 @@
         font-size: 3.5rem;
     }
 
-    .line {
+    .title::after {
         width: 13.8rem;
         height: 0.8rem;
         bottom: 0.5rem;
@@ -155,7 +155,7 @@
         width: 25rem;
     }
 
-    .line {
+    .title::after {
         width: 11rem;
         height: 0.6rem;
     }
@@ -192,7 +192,7 @@
         top: 12rem;
     }
 
-    .line {
+    .title::after {
         width: 8rem;
         height: 0.5rem;
         bottom: 0.3rem;
@@ -243,7 +243,7 @@
         line-height: 1.3rem;
     }
 
-    .line {
+    .title::after {
         width: 5.2rem;
         height: 0.3rem;
         bottom: 0.1rem;

@@ -15,7 +15,6 @@ const AboutUs = () => {
                 <p className={styles.text}>
                     {DEFAULT_TEXT}
                 </p>
-                <div className={styles.line} />
                 <button type="button" className={styles.button}>EXPLORE MORE</button>
             </div>
             <div className={styles.container_image}>

@@ -13,6 +13,16 @@
     overflow: hidden;
     z-index: -1;
 }
+.wrapper::after {
+    content: "";
+    position: absolute;
+    width: 11.5rem;
+    height: 0.8rem;
+    background-color: $color-line;
+    left: 56%;
+    top: 11.1rem;
+    z-index: 0;
+}
 .blue {
     width: 149%;
     height: 200%;
@@ -43,15 +53,6 @@
 .title1 {
     font-weight: bold;
     padding-top: 5rem;
-}
-.line {
-    position: absolute;
-    width: 11.5rem;
-    height: 0.8rem;
-    background-color: $color-line;
-    left: 56%;
-    top: 11.1rem;
-    z-index: 0;
 }
 .cards {
     margin-top: 3rem;
@@ -106,7 +107,6 @@
     font-size: 1.4rem;
     background: transparent;
     cursor: pointer;
-    padding: 0;
 }
 .next:active,
 .back:active {
@@ -132,7 +132,7 @@
     .title1 {
         padding-top: 3.5rem;
     }
-    .line {
+    .wrapper::after {
         width: 9rem;
         height: 0.6rem;
         top: 7.9rem;
@@ -176,7 +176,7 @@
     .title1 {
         padding-top: 3rem;
     }
-    .line {
+    .wrapper::after {
         width: 7.3rem;
         height: 0.4rem;
         top: 6.6rem;
@@ -233,7 +233,7 @@
     .title1 {
         padding-top: 2rem;
     }
-    .line {
+    .wrapper::after {
         width: 4.6rem;
         height: 0.3rem;
         top: 4.4rem;

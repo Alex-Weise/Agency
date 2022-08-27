@@ -24,7 +24,8 @@
 .text {
     font-size: 1.2rem;
 }
-.line {
+.container_text::after {
+    content: "";
     position: absolute;
     width: 5.2rem;
     height: 0.6rem;
@@ -139,7 +140,7 @@
     .text {
         font-size: 1rem;
     }
-    .line {
+    .container_text::after {
         width: 4.4rem;
         height: 0.5rem;
         top: 8.5rem;
@@ -186,7 +187,7 @@
     .text {
         font-size: 0.8rem;
     }
-    .line {
+    .container_text::after {
         width: 3.5rem;
         height: 0.4rem;
         top: 7.6rem;
@@ -219,7 +220,7 @@
     .text {
         font-size: 0.6rem;
     }
-    .line {
+    .container_text::after {
         width: 2.3rem;
         height: 0.3rem;
         top: 4.4rem;

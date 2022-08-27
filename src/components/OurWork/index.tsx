@@ -52,7 +52,6 @@ const OurWork = () => {
                 <div className={styles.title}>
                     <p className={styles.title1}>Our Recent Work</p>
                     <p className={styles.title2}>By Our Experts</p>
-                    <div className={styles.line} />
                 </div>
                 <p className={styles.text}>
                     {DEFAULT_TEXT}

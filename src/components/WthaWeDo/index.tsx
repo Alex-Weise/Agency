@@ -43,7 +43,6 @@ const WhatWeDo = () => {
         <section className={styles.container} data-testid="section">
             <div className={styles.wrapper}>
                 <div className={styles.blue} />
-                <div className={styles.line} />
             </div>
             <div className={styles.dotted} />
             <p className={styles.title1}>What We Do</p>

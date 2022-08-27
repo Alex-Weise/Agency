@@ -5,7 +5,6 @@ import { DEFAULT_TEXT } from "../../App";
 const OurComments = () => {
     return (
         <section className={styles.wrapper}>
-            <div className={styles.line} />
             <p className={styles.title1}>Our Testimonials</p>
             <p className={styles.title2}>What Our Clients Are Saying</p>
             <div className={styles.container}>
