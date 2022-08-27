@@ -7,58 +7,58 @@ import { useEffect, useState } from "react";
 const Header = () => {
     const [activeLine, setActive] = useState("Home");
 
-    useEffect( () => {
-        const hadlerScroll = () => {
-            const scrolled = Math.ceil(window.scrollY);
-            const widthScreen = window.innerWidth;
-            if (widthScreen <= 576) {
-                if (scrolled < 350 ) {
-                    setActive("Home");
-                } else if (scrolled >= 350 && scrolled <= 750) {
-                    setActive("About Us");
-                } else if (scrolled > 750 && scrolled < 1350) {
-                    setActive("Services");
-                } else { setActive("Contact Us")};
-            } else if (widthScreen > 576 && widthScreen < 767) {
-                if (scrolled < 400) {
-                    setActive("Home");
-                } else if (scrolled >= 400 && scrolled < 870) {
-                    setActive("About Us");
-                } else if (scrolled >= 870 && scrolled < 1700) {
-                    setActive("Services");
-                } else { setActive("Contact Us")};
-            } else if (widthScreen >= 767 && widthScreen < 1024) {
-                if (scrolled < 550) {
-                    setActive("Home");
-                } else if (scrolled >= 550 && scrolled < 1200) {
-                    setActive("About Us");
-                } else if (scrolled >= 1200 && scrolled < 2300) {
-                    setActive("Services");
-                } else { setActive("Contact Us")};
-            } else if (widthScreen >= 1024 && widthScreen < 1440) {
-                if (scrolled < 550) {
-                    setActive("Home");
-                } else if (scrolled >= 550 && scrolled < 1300) {
-                    setActive("About Us");
-                } else if (scrolled >= 1300 && scrolled < 2700) {
-                    setActive("Services");
-                } else { setActive("Contact Us")};
-            } else {
-                if (scrolled < 650) {
-                    setActive("Home");
-                } else if (scrolled >= 650 && scrolled < 1500) {
-                    setActive("About Us");
-                } else if (scrolled >= 1500 && scrolled < 3000) {
-                    setActive("Services");
-                } else { setActive("Contact Us")};
-            }
+    // useEffect( () => {
+    //     const hadlerScroll = () => {
+    //         const scrolled = Math.ceil(window.scrollY);
+    //         const widthScreen = window.innerWidth;
+    //         if (widthScreen <= 576) {
+    //             if (scrolled < 350 ) {
+    //                 setActive("Home");
+    //             } else if (scrolled >= 350 && scrolled <= 750) {
+    //                 setActive("About Us");
+    //             } else if (scrolled > 750 && scrolled < 1350) {
+    //                 setActive("Services");
+    //             } else { setActive("Contact Us")};
+    //         } else if (widthScreen > 576 && widthScreen < 767) {
+    //             if (scrolled < 400) {
+    //                 setActive("Home");
+    //             } else if (scrolled >= 400 && scrolled < 870) {
+    //                 setActive("About Us");
+    //             } else if (scrolled >= 870 && scrolled < 1700) {
+    //                 setActive("Services");
+    //             } else { setActive("Contact Us")};
+    //         } else if (widthScreen >= 767 && widthScreen < 1024) {
+    //             if (scrolled < 550) {
+    //                 setActive("Home");
+    //             } else if (scrolled >= 550 && scrolled < 1200) {
+    //                 setActive("About Us");
+    //             } else if (scrolled >= 1200 && scrolled < 2300) {
+    //                 setActive("Services");
+    //             } else { setActive("Contact Us")};
+    //         } else if (widthScreen >= 1024 && widthScreen < 1440) {
+    //             if (scrolled < 550) {
+    //                 setActive("Home");
+    //             } else if (scrolled >= 550 && scrolled < 1300) {
+    //                 setActive("About Us");
+    //             } else if (scrolled >= 1300 && scrolled < 2700) {
+    //                 setActive("Services");
+    //             } else { setActive("Contact Us")};
+    //         } else {
+    //             if (scrolled < 650) {
+    //                 setActive("Home");
+    //             } else if (scrolled >= 650 && scrolled < 1500) {
+    //                 setActive("About Us");
+    //             } else if (scrolled >= 1500 && scrolled < 3000) {
+    //                 setActive("Services");
+    //             } else { setActive("Contact Us")};
+    //         }
 
-        };
-        window.addEventListener("scroll", hadlerScroll);
-        return () => {
-            window.removeEventListener("scroll", hadlerScroll);
-        };
-    }, [setActive])
+    //     };
+    //     window.addEventListener("scroll", hadlerScroll);
+    //     return () => {
+    //         window.removeEventListener("scroll", hadlerScroll);
+    //     };
+    // }, [setActive])
 
     const scrollTo = (str:string) => {
         let width = window.innerWidth;

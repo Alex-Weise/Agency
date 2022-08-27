@@ -102,7 +102,7 @@
     border: 1px solid black;
     border-radius: 50%;
     width: 2rem;
-    height: 2rem;
+    height: 100%;
     font-size: 1.4rem;
     background: transparent;
     cursor: pointer;
@@ -273,7 +273,7 @@
     .next,
     .back {
         width: 1.3rem;
-        height: 1.3rem;
+        // height: 1.3rem;
         font-size: 0.8rem;
     }
 }
