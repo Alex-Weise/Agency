@@ -60,53 +60,53 @@ const Header = () => {
     //     };
     // }, [setActive])
 
-    const scrollTo = (str:string) => {
-        let width = window.innerWidth;
-        let max = document.documentElement.scrollHeight - window.innerHeight;
-        if ( str === "About Us") {
-            if (width >= 1440) {
-                window.scrollTo(0, 1550);
-            } else if (width < 1440 && width >= 1024) {
-                window.scrollTo(0, 1500);
-            } else if (width < 1024 && width >= 767) {
-                window.scrollTo(0, 1200);
-            } else if(width < 767 && width >= 576) {
-                window.scrollTo(0, 500);
-            } else { window.scrollTo(0, 850);}
-        } else  if ( str === "Services") {
-            if (width >= 1440) {
-                window.scrollTo(0, 2400);
-            } else if (width < 1440 && width >= 1024) {
-                window.scrollTo(0, 2250);
-            } else if (width < 1024 && width >= 767) {
-                window.scrollTo(0, 1800);
-            } else if(width < 767 && width >= 576) {
-                window.scrollTo(0, 900);
-            } else { window.scrollTo(0, 1200);}
-        } else  if ( str === "Contact Us") {
-            window.scrollTo(0, max)
-        }
-    };
+    // const scrollTo = (str:string) => {
+    //     let width = window.innerWidth;
+    //     let max = document.documentElement.scrollHeight - window.innerHeight;
+    //     if ( str === "About Us") {
+    //         if (width >= 1440) {
+    //             window.scrollTo(0, 1550);
+    //         } else if (width < 1440 && width >= 1024) {
+    //             window.scrollTo(0, 1500);
+    //         } else if (width < 1024 && width >= 767) {
+    //             window.scrollTo(0, 1200);
+    //         } else if(width < 767 && width >= 576) {
+    //             window.scrollTo(0, 500);
+    //         } else { window.scrollTo(0, 850);}
+    //     } else  if ( str === "Services") {
+    //         if (width >= 1440) {
+    //             window.scrollTo(0, 2400);
+    //         } else if (width < 1440 && width >= 1024) {
+    //             window.scrollTo(0, 2250);
+    //         } else if (width < 1024 && width >= 767) {
+    //             window.scrollTo(0, 1800);
+    //         } else if(width < 767 && width >= 576) {
+    //             window.scrollTo(0, 900);
+    //         } else { window.scrollTo(0, 1200);}
+    //     } else  if ( str === "Contact Us") {
+    //         window.scrollTo(0, max)
+    //     }
+    // };
 
     return (
         <header className={styles.header}>
             <div className={styles.nav}>
-                <div style={{position: "relative"}}
+                <a href="#Home" style={{position: "relative"}}
                     onClick={() => setActive("Home")}>
                         Home{activeLine === "Home" && <ActiveLine />}
-                </div>
-                <div style={{position: "relative"}}
-                    onClick={() => {setActive("About Us"); scrollTo("About Us")}}>
+                </a>
+                <a href="#About Us" style={{position: "relative"}}
+                    onClick={() => setActive("About Us")}>
                         About Us{activeLine === "About Us" && <ActiveLine />}
-                </div>
-                <div style={{position: "relative"}}
-                    onClick={() => {setActive("Services"); scrollTo("Services")}}>
+                </a>
+                <a href="#Services" style={{position: "relative"}}
+                    onClick={() => setActive("Services")}>
                         Services{activeLine === "Services" && <ActiveLine />}
-                </div>
-                <div style={{position: "relative"}}
-                    onClick={() => {setActive("Contact Us"); scrollTo("Contact Us")}}>
+                </a>
+                <a href="#Contact Us" style={{position: "relative"}}
+                    onClick={() => setActive("Contact Us")}>
                         Contact Us{activeLine === "Contact Us" && <ActiveLine />}
-                </div>
+                </a>
             </div>
             <div className={styles.logo}>
                 <h1>Dream Agency</h1>

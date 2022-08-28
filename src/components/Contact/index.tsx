@@ -4,7 +4,7 @@ import map from "../../assets/Map.png";
 
 const Contact = () => {
     return (
-        <section className={styles.wrapper}>
+        <section className={styles.wrapper} id="Contact Us">
             <div className={styles.black} />
             <div className={styles.container}>
                 <div className={styles.content}>

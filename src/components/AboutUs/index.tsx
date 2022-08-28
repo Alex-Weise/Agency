@@ -5,7 +5,7 @@ import { DEFAULT_TEXT } from "../../App";
 const AboutUs = () => {
 
     return (
-        <section className={styles.wrapper}>
+        <section className={styles.wrapper} id="About Us">
             <div className={styles.container_text}>
                 <p className={styles.title1}>About Us</p>
                 <p className={styles.title2}>Fake or Real</p>

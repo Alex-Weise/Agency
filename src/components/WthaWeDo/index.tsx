@@ -4,6 +4,8 @@ import computer from "../../assets/link/computer.svg";
 import mobile from "../../assets/link/mobile-phone.svg";
 import rocket from "../../assets/link/rocket.svg";
 import heart from "../../assets/link/icon-heart.png";
+import right from "../../assets/link/right.svg";
+import left from "../../assets/link/left.svg";
 import { useState } from "react";
 import { SHORT_TEXT } from "../../App";
 
@@ -96,9 +98,9 @@ const WhatWeDo = () => {
             </div>
             <div className={styles.buttons}>
                 <button className={styles.back} id="back" onClick={goBack} type="button"
-                    style={count <= 15 ? disableButton() : {}}>{"<"}</button>
+                    style={count <= 15 ? disableButton() : {}}><img src={left} alt="left" className={styles.left}/></button>
                 <button className={styles.next} id="next" onClick={() => goNext()} type="button"
-                    style={count >= 90 ? disableButton() : {} } >{">"}</button>
+                    style={count >= 90 ? disableButton() : {} } ><img src={right} alt="right" className={styles.right}/></button>
             </div>
         </section>
     )

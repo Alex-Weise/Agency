@@ -5,7 +5,7 @@ import { DEFAULT_TEXT } from "../../App";
 const Home = () => {
 
     return (
-        <section className={styles.wrapper}>
+        <section className={styles.wrapper} id="Home">
             <div className={styles.container_text}>
                 <div className={styles.title}>
                     <p className={styles.title1}>We Help you</p>

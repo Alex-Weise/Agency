@@ -77,6 +77,9 @@
     padding: 1rem;
     top: 2rem;
     left: 2rem;
+    a {
+        color: skyblue;
+    }
 }
 .town {
     margin: 0;
@@ -189,6 +192,7 @@
         padding: 0.3rem;
         top: 6%;
         left: 33%;
+        line-height: 0.8rem;
         a {
             font-size: 0.7rem;
         }
@@ -250,6 +254,7 @@
         padding: 0.2rem;
         top: 6%;
         left: 28%;
+        line-height: 0.7rem;
         a {
             font-size: 0.5rem;
         }
@@ -315,8 +320,13 @@
         padding: 0.3rem;
         top: 4%;
         left: 19%;
+        line-height: 0.5rem;
         a {
-            font-size: 0.4rem;
+            font-size: 0.3rem;
         };
+    }
+    .town,
+    .country {
+        font-size: 0.3rem;
     }
 }

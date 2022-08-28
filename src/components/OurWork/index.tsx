@@ -5,6 +5,8 @@ import mob1 from "../../assets/cards/card1-2.png";
 import web2 from "../../assets/cards/card2-1.png";
 import mob2 from "../../assets/cards/card2-2.png";
 import web3 from "../../assets/cards/card3.png";
+import right from "../../assets/link/right.svg";
+import left from "../../assets/link/left.svg";
 import { DEFAULT_TEXT } from "../../App";
 
 
@@ -46,7 +48,7 @@ const OurWork = () => {
     }
 
     return (
-        <section className={styles.wrapper}>
+        <section className={styles.wrapper} id="Services">
             <div className={styles.pink} />
             <div className={styles.container_text}>
                 <div className={styles.title}>
@@ -111,9 +113,9 @@ const OurWork = () => {
             </div>
             <div className={styles.buttons}>
                 <button className={styles.back} id="back" onClick={goBack} type="button"
-                    style={count <= 20 ? disableButton() : {}}>{"<"}</button>
+                    style={count <= 20 ? disableButton() : {}}><img src={left} alt="left" className={styles.left}/></button>
                 <button className={styles.next} id="next" onClick={() => goNext()} type="button"
-                    style={count > 100 ? disableButton() : {} } >{">"}</button>
+                    style={count > 100 ? disableButton() : {} }><img src={right} alt="right" className={styles.right}/></button>
             </div>
         </section>
     )

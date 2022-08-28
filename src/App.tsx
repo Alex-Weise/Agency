@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.scss';
+import top from "./assets/link/top.svg";
 import { AboutUs } from './components/AboutUs';
 import { OurComments } from './components/Comments';
 import { Contact } from './components/Contact';
@@ -27,14 +28,18 @@ function App() {
   }, [setScroll])
 
   const goUp = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
     <>
       <Header />
       <main>
-        <button className={isScroll ? "button_up" : "close"} type="button" onClick={goUp}>UP</button>
+        <button className={isScroll ? "button_up" : "close"} type="button" onClick={goUp}><img src={top} alt="Top" className="top"/></button>
         <Home />
         <WhatWeDo />
         <AboutUs />
