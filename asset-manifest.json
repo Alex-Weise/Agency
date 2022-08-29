@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Agency/static/css/main.2231c04f.css",
-    "main.js": "/Agency/static/js/main.77a4e5db.js",
+    "main.css": "/Agency/static/css/main.70d6b34c.css",
+    "main.js": "/Agency/static/js/main.91156614.js",
     "static/media/Two-people.png": "/Agency/static/media/Two-people.1db97859525503f8c037.png",
     "static/media/Mask-group.png": "/Agency/static/media/Mask-group.45bb23ea2172bc9517b4.png",
     "static/media/Map.png": "/Agency/static/media/Map.914e0828d8c3529de2d2.png",
@@ -19,16 +19,19 @@
     "static/media/computer.svg": "/Agency/static/media/computer.851f81a45c6f0f8c7afe082cd45971cc.svg",
     "static/media/insta.svg": "/Agency/static/media/insta.a7633190ddfd3a5b7409044e337e078c.svg",
     "static/media/website.svg": "/Agency/static/media/website.d8b6090d83f8bb1a2aa01d8133da0b57.svg",
+    "static/media/top.svg": "/Agency/static/media/top.8dcd07271a764dc6e2781c4fb04a10c3.svg",
     "static/media/linkIn.svg": "/Agency/static/media/linkIn.a5333019b66657133e710702d723ab54.svg",
     "static/media/facebook.svg": "/Agency/static/media/facebook.9c886b5ac1fb32f0b240350991c7806d.svg",
     "static/media/elipse.svg": "/Agency/static/media/elipse.741e8f4f6b9c89b08e4d.svg",
     "static/media/znak.svg": "/Agency/static/media/znak.dec04fcad073257c549a671d854b25fb.svg",
     "index.html": "/Agency/index.html",
-    "main.2231c04f.css.map": "/Agency/static/css/main.2231c04f.css.map",
-    "main.77a4e5db.js.map": "/Agency/static/js/main.77a4e5db.js.map"
+    "static/media/right.svg": "/Agency/static/media/right.92159aca13a5c73ce30443df816fd392.svg",
+    "static/media/left.svg": "/Agency/static/media/left.536eb90c35a843001d00081bba9471bf.svg",
+    "main.70d6b34c.css.map": "/Agency/static/css/main.70d6b34c.css.map",
+    "main.91156614.js.map": "/Agency/static/js/main.91156614.js.map"
   },
   "entrypoints": [
-    "static/css/main.2231c04f.css",
-    "static/js/main.77a4e5db.js"
+    "static/css/main.70d6b34c.css",
+    "static/js/main.91156614.js"
   ]
 }
