@@ -63,7 +63,12 @@ input[type="checkbox"]:checked {
     cursor: pointer;
     div:active {
         transform: scale(1.1);
-    }
+    };
+    // @supports not ((display: flex) and (gap: 1rem)) {
+    //     a {
+    //         margin-right: 1.5rem;
+    //     }
+    // };
 }
 
 .logo {
@@ -78,6 +83,11 @@ input[type="checkbox"]:checked {
     justify-content: flex-end;
     gap: 2rem;
     flex: auto;
+    // @supports not ((display: flex) and (gap: 2rem)) {
+    //     .img {
+    //         margin-right: 2rem;
+    //     }
+    // }
 }
 
 .img {

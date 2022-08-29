@@ -30,15 +30,18 @@
 .text {
     font-size: 1.2rem;
 }
-.title::after {
-    content: "";
-    position: absolute;
-    width: 10rem;
-    height: 0.7rem;
-    background-color: $color-line;
-    bottom: 0.1rem;
-    left: 10.3rem;
-    z-index: -1;
+.title2 span {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 9.7rem;
+        height: 0.7rem;
+        background-color: $color-line;
+        bottom: 0.5rem;
+        left: 0;
+        z-index: -1;
+    }
 }
 .pink {
     position: absolute;
@@ -163,11 +166,10 @@
     .text {
         font-size: 1rem;
     }
-    .title::after {
+    .title2 span::after {
         width: 7.6rem;
         height: 0.5rem;
-        left: 8.1rem;
-        bottom: 0;
+        bottom: 0.4rem;
     }
     .cards {
         margin-top: 1rem;
@@ -209,10 +211,11 @@
     .text {
         font-size: 0.8rem;
     }
-    .title::after {
-        width: 6rem;
+    .title2 span::after {
+        width: 6.1rem;
         height: 0.4rem;
-        left: 6.5rem;
+        bottom: 0.3rem;
+        left: -0.05rem;
     }
     .pink {
     border-radius: 17rem;
@@ -247,7 +250,7 @@
 @include breakpoint(xs) {
     .wrapper {
         margin-top: 2rem;
-        height: 16rem;
+        height: 17rem;
     }
     .container_text {
         align-items: center;
@@ -269,10 +272,9 @@
     .text {
         font-size: 0.6rem;
     }
-    .title::after {
-        width: 3rem;
+    .title2 span::after {
+        width: 3.1rem;
         height: 0.25rem;
-        left: 3.2rem;
         bottom: 0.1rem;
     }
     .cards {

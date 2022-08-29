@@ -13,16 +13,6 @@
     overflow: hidden;
     z-index: -1;
 }
-.wrapper::after {
-    content: "";
-    position: absolute;
-    width: 11.5rem;
-    height: 0.8rem;
-    background-color: $color-line;
-    left: 56%;
-    top: 11.1rem;
-    z-index: 0;
-}
 .blue {
     width: 149%;
     height: 200%;
@@ -53,6 +43,19 @@
 .title1 {
     font-weight: bold;
     padding-top: 5rem;
+}
+.title2 span { 
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 11.5rem;
+        height: 0.7rem;
+        background-color: $color-line;
+        left: 0;
+        bottom: 0.5rem;
+        z-index: -1;
+    }
 }
 .cards {
     margin-top: 3rem;
@@ -137,10 +140,11 @@
     .title1 {
         padding-top: 3.5rem;
     }
-    .wrapper::after {
+    .title2 span::after {
         width: 9rem;
-        height: 0.6rem;
-        top: 7.9rem;
+        height: 0.55rem;
+        bottom: 0.4rem;
+        left: -0.1rem;
     }
     .cards {
         margin-top: 2rem;
@@ -181,10 +185,10 @@
     .title1 {
         padding-top: 3rem;
     }
-    .wrapper::after {
+    .title2 span::after {
         width: 7.3rem;
         height: 0.4rem;
-        top: 6.6rem;
+        bottom: 0.35rem;
     }
     .blue {
         border-radius: 15rem;
@@ -237,11 +241,10 @@
     .title1 {
         padding-top: 2rem;
     }
-    .wrapper::after {
-        width: 4.6rem;
+    .title2 span::after {
+        width: 4.7rem;
         height: 0.3rem;
-        top: 4.45rem;
-        left: 56.3%;
+        bottom: 0.2rem;
     }
     .cards {
         margin-top: 1rem;
@@ -253,7 +256,7 @@
         border-radius: 0.2rem;
     }
     .wrapper {
-        height: 16.5rem;
+        height: 17rem;
     }
     .blue {
         width: 170%;
@@ -277,6 +280,7 @@
     }
     .card {
         min-width: 110px;
+        padding: 0.6rem;
     }
     .buttons {
         gap: 0.5rem;

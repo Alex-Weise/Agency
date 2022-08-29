@@ -24,15 +24,18 @@
 .text {
     font-size: 1.2rem;
 }
-.container_text::after {
-    content: "";
-    position: absolute;
-    width: 5.2rem;
-    height: 0.6rem;
-    background-color: $color-line;
-    top: 10.1rem;
-    left: 10.4rem;
-    z-index: -1;
+.title2 span {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 5.5rem;
+        height: 0.6rem;
+        background-color: $color-line;
+        bottom: 0.5rem;
+        left: 0;
+        z-index: -1;
+    }
 }
 .button {
     margin-top: 1rem;
@@ -140,11 +143,10 @@
     .text {
         font-size: 1rem;
     }
-    .container_text::after {
-        width: 4.4rem;
+    .title2 span::after {
+        width: 4.5rem;
         height: 0.5rem;
-        top: 8.5rem;
-        left: 8.6rem;
+        bottom: 0.4rem;
     }
     .button {
         margin-top: 0.5rem;
@@ -187,11 +189,10 @@
     .text {
         font-size: 0.8rem;
     }
-    .container_text::after {
-        width: 3.5rem;
+    .title2 span::after {
+        width: 3.6rem;
         height: 0.4rem;
-        top: 7.6rem;
-        left: 6.9rem;
+        bottom: 0.3rem;
     }
     .button {
         margin-top: 0;
@@ -220,11 +221,10 @@
     .text {
         font-size: 0.6rem;
     }
-    .container_text::after {
-        width: 2.3rem;
+    .title2 span::after {
+        width: 2.4rem;
         height: 0.3rem;
-        top: 4.4rem;
-        left: 4.5rem;
+        bottom: 0.2rem;
     }
     .button {
         margin-top: 0;

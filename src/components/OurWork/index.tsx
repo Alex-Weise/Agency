@@ -53,7 +53,7 @@ const OurWork = () => {
             <div className={styles.container_text}>
                 <div className={styles.title}>
                     <p className={styles.title1}>Our Recent Work</p>
-                    <p className={styles.title2}>By Our Experts</p>
+                    <p className={styles.title2}>By Our <span>Experts</span></p>
                 </div>
                 <p className={styles.text}>
                     {DEFAULT_TEXT}

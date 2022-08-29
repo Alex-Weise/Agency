@@ -6,7 +6,7 @@ const OurComments = () => {
     return (
         <section className={styles.wrapper}>
             <p className={styles.title1}>Our Testimonials</p>
-            <p className={styles.title2}>What Our Clients Are Saying</p>
+            <p className={styles.title2}>What Our Clients Are <span>Saying</span></p>
             <div className={styles.container}>
                 <div className={styles.comm}>
                     <img src={znak} alt="Sign" />

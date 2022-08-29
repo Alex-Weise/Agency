@@ -48,7 +48,7 @@ const WhatWeDo = () => {
             </div>
             <div className={styles.dotted} />
             <p className={styles.title1}>What We Do</p>
-            <p className={styles.title2}>For Your Business</p>
+            <p className={styles.title2}>For Your <span>Business</span></p>
             <div className={styles.cards} id="cards" data-testid="cards">
                 <div className={styles.card}>
                     <div className={styles.card_icon} style={{backgroundColor: "#FFDED4"}}>

@@ -16,15 +16,18 @@
 .title1 {
     font-weight: bold;
 }
-.wrapper::after {
-    content: "";
-    position: absolute;
-    width: 8.3rem;
-    height: 0.6rem;
-    background-color: $color-line;
-    top: 6.1rem;
-    left: calc(50% + 10rem);
-    z-index: -1;
+.title2 span {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 8.3rem;
+        height: 0.6rem;
+        background-color: $color-line;
+        bottom: 0.5rem;
+        left: -0.1rem;
+        z-index: -1;
+    }
 }
 .container {
     margin-top: 4rem;
@@ -81,11 +84,10 @@
         font-size: 2.5rem;
         line-height: 2.8rem;
     }
-    .wrapper::after {
+    .title2 span::after {
         width: 7rem;
         height: 0.5rem;
-        top: 5rem;
-        left: calc(50% + 8.2rem);
+        bottom: 0.4rem;
     }
     .container {
         margin-top: 3rem;
@@ -115,11 +117,9 @@
         font-size: 2rem;
         line-height: 2.1rem;
     }
-    .wrapper::after {
+    .title2 span::after {
         width: 5.5rem;
         height: 0.4rem;
-        top: 3.75rem;
-        left: calc(50% + 6.6rem);
     }
     .container {
         margin-top: 2rem;
@@ -149,11 +149,10 @@
         font-size: 1.3rem;
         line-height: 1.4rem;
     }
-    .wrapper::after {
+    .title2 span::after {
         width: 3.6rem;
         height: 0.3rem;
-        top: 2.4rem;
-        left: calc(50% + 4.3rem);
+        bottom: 0.2rem;
     }
     .container {
         margin-top: 1rem;
